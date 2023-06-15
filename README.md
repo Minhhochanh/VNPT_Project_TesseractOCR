@@ -4,10 +4,10 @@
 2. Công nghệ:
 - Ngôn ngữ: Python.
 - Gói thư viện: 
-  + pytesseract (nhận diện chữ).
+  + pytesseract ( Để nhận dạng chữ từ ảnh).
   + Gói ngôn ngữ tiếng Việt cho pytesseract.
   + pdf2image (xuất file pdf thành các hình ảnh).
-  + opencv-python ( xử lý ảnh và thị giác máy tính).
+  + opencv-python ( Để xử lý và xem ảnh).
 3. Ý tưởng:
 - Sau khi nhận được file PDF hình ảnh sẽ xuất tất cả sildes thành file hình ảnh với định dạng JPG hoặc PNG.
 - Sau đó đọc tất cả các hình ảnh và xuất kết quả ra màn hình. 
