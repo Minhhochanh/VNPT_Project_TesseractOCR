@@ -12,3 +12,18 @@
 - Sau khi nhận được file PDF hình ảnh sẽ xuất tất cả sildes thành file hình ảnh với định dạng JPG hoặc PNG.
 - Sau đó đọc tất cả các hình ảnh và xuất kết quả ra màn hình. 
 4. Thực hiện:
+#import các thư viện 
+import cv2
+import os
+import pytesseract
+from pdf2image import convert_from_path
+
+#xuất file PDF hình ảnh thành hình ảnh
+
+input_path = 'text.pdf'
+
+images = convert_from_path(input_path, 500)
+ 
+for i in range(len(images)):
+    image = images[i]
+    image.save('data/output_{}.jpg'.format(i), 'JPEG')
